@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 35%;
+            margin: auto;
+            border: solid black 1px;
+            background-color: azure;
+            border-radius: 5px;
+        }
+        .judul{
+            padding: 20px 5px ;
+            text-align: center;
+            background-color: aqua;
+            font-weight: bold;
+        }
+        td{
+            padding: 20px;
+        }
+        button{
+            padding: 4px 10px;
+        }
+        input{
+            padding: 5px;
+            border-radius: 3px;
+            border:1px solid black;
+            background-color: white;
+        }
+        /* *{
+            border: solid red 1px;
+        } */
+    </style>
+</head>
+<body>
+
+ 
+    <h1 style="padding-top: 8%;"></h1>
+    
+    <form id="kalkulator">
+        <table>
+            <tr>
+                <td colspan="2" class="judul">APLIKASI KAKULATOR JAVASCRIPT</td>
+            </tr>
+            <tr>
+              <td>Angka 1 :</td>
+              <td><input type="text" name="angka" placeholder="masukan angka pertama"></td>
+            </tr>
+            <tr>
+              <td>Angka 2 :</td>
+              <td><input type="text" name="angka2" placeholder="masukan angka kedua"></td>
+            </tr>
+            <tr>
+              <td>Hasil :</td>
+              <td><input type="text" name="hasil" value="" disabled></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button type="button" name="btn_tambah" onclick="tambah()">+</button>
+                <button type="button" name="btn_kurang" onclick="kurang()">-</button>
+                <button type="button" name="btn_perkalian" onclick="perkalian()">*</button>
+                <button type="button" name="btn_pangkat" onclick="pangkatan()">**</button>
+              </td>
+            </tr>
+          </table>
+          
+</form>
+
+    <script src="js/Kakulator.js"> </script>
+</body>
+</html>
