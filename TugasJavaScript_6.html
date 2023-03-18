@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- memanggil file jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>   
+    $(document).ready(function () {
+      // menambahkan fungsi ketika gambar diklik
+      $("img").click(function () {
+        // menyembunyikan gambar dengan metode hide()
+        /* this digunakan untuk mengacu pada gambar yang akan diklik 
+            sehingga gambarnya tidak menghilang pada saat sala satu gambar diklik
+        */
+        $(this).hide();
+      });
+    });
+      </script>
+
+  </head>
+  <body>
+      <img src="img/gambar1.jpg" alt="gambar1">
+      <img src="img/gambar2.jpg" alt="gambar2">
+      <img src="img/gambar3.jpg" alt="gambar3">
+  </body>
+</html>
